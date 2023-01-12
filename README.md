@@ -16,7 +16,7 @@
    - 취소선 : ~ ~ abc ~ ~
 6. 구분선 : ---
 
----
+
 ---
 
 ## GUI vs CLI
@@ -55,7 +55,7 @@
   - ../ : 현재 작업중인 폴더의 상위 폴더
 
 
----
+
 ---
 
 
@@ -75,4 +75,49 @@
 | ------- | ----- | --- | --- |
 | git add -> | git commit -> | git push ->  |
 
+
+### Git 명령어
+
+main
+
+1. git add
+   - git add 파일명
+   - 스테이지로 올리기
+2. git commit
+   - git commit -m '내용'
+   - commit 작성
+3. git push
+   - git push origin main
+   - git push -u origin main (맨 처음 사용 시)
+   - github에 업로드
+  
+기타
+
+1. git status
+   - 현재 상태 확인
+2. git remote add origin 주소
+   - 로컬과 온라인 연결
+3. git remote -v
+   - 연결 확인
+4. git diff 파일명
+   - 변경된 부분 확인
+5. 스테이지에서 내리기
+   - git restore --staged 파일명
+6. commit 이력 확인
+   - git log
+
+에러 시
+1. 실행 종료
+   - q
+   - ctrl + c
+2. VIM 종료 : ESC -> :q!
+
+### Github -> Local Clone
+
+코드 변경사항까지 저장
+- https 주소 복사 후
+- git clone 주소
+
+코드만 저장
+- ZIP file 다운로드
 
